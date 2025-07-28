@@ -1,0 +1,4 @@
+Enter symbol (e.g., BTCUSDT): Buy or Sell? (buy/sell): Order type (market/limit): Enter quantity: Traceback (most recent call last):
+  File "C:\Users\ADMIN\Music\trading_bot\cli.py", line 6, in <module>
+    quantity = float(input("Enter quantity: ").strip())
+ValueError: could not convert string to float: ''
