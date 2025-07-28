@@ -1,0 +1,3 @@
+BYBIT_API_KEY="kh6iYj2tYyr65Lv5Ze"
+BYBIT_API_SECRET="87gi8Jq4Safe2DlsFXTzPBugMjkoaT3jsrBJ"
+BASE_URL = "https://api-testnet.bybit.com"
