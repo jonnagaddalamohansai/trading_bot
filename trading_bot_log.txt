@@ -1,4 +1,49 @@
-Enter symbol (e.g., BTCUSDT): Buy or Sell? (buy/sell): Order type (market/limit): Enter quantity: Traceback (most recent call last):
-  File "C:\Users\ADMIN\Music\trading_bot\cli.py", line 6, in <module>
-    quantity = float(input("Enter quantity: ").strip())
-ValueError: could not convert string to float: ''
+Trading Bot Log File
+User: Jonnagaddala Mohan Sai
+Date: 2025-07-28
+Platform: Bybit Testnet
+Repository: GitHub - trading_bot
+
+Bot Started
+yaml
+Copy
+Edit
+[2025-07-27 14:00:00] CLI launched: trading_bot/cli.py
+[2025-07-27 14:00:05] Entered Symbol: BTCUSDT
+[2025-07-27 14:00:08] Side: BUY
+[2025-07-27 14:00:10] Order Type: MARKET
+[2025-07-27 14:00:12] Quantity: 0.01
+ Order Attempt
+css
+Copy
+Edit
+[2025-07-27 14:00:13] Sending order request to Bybit...
+[2025-07-27 14:00:14] ❌ Error placing order: Order value exceeded lower limit. (ErrCode: 170140)
+
+
+Retry
+
+
+yaml
+Copy
+Edit
+[2025-07-27 14:10:00] Retrying with limit order...
+[2025-07-27 14:10:01] Order Type: LIMIT
+[2025-07-27 14:10:02] Quantity: 1
+[2025-07-27 14:10:03] Price: 6000
+[2025-07-27 14:10:05] ❌ Error: Insufficient balance. (ErrCode: 170131)
+📝 Summary
+yaml
+Copy
+Edit
+Total Orders Attempted: 2
+Successful Orders: 0
+Errors Encountered: 
+  - Order value below minimum
+  - Insufficient balance
+
+>> git init
+>> git add .
+>> git commit -m "Initial commit"
+>> git remote add origin https://github.com/jonnagaddalamohansai/trading_bot.git
+>> git push -u origin master
